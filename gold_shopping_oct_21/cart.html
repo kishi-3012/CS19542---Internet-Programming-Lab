@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Gold Shopping</title>
+    <link rel="stylesheet" href="css\gcss.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>GS GOLD</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="reviews.html">Reviews & Ratings</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart">
+            <h2>Your Cart Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gold Necklace</td>
+                        <td>₹50,000</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>₹50,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Earrings</td>
+                        <td>₹20,000</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>₹20,000</td>
+                    </tr>
+                    <!-- Add more cart items as needed -->
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Subtotal: ₹70,000</p>
+                <p>Taxes: ₹7,000</p>
+                <h4>Total: ₹77,000</h4>
+                <button><a href="checkout.html">Proceed to Checkout</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gold Shopping. All rights reserved.</p>
+    </footer>
+</body>
+</html>

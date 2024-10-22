@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews & Ratings - Gold Shopping</title>
+    <link rel="stylesheet" href="css\gcss.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Reviews & Ratings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="reviews.html">Reviews & Ratings</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-item">
+                <p><strong>Jane Doe</strong> rated <strong>5/5</strong></p>
+                <p>"The gold necklace I bought exceeded my expectations. Beautiful craftsmanship!"</p>
+            </div>
+            <div class="review-item">
+                <p><strong>John Smith</strong> rated <strong>4/5</strong></p>
+                <p>"Great experience shopping here. Fast delivery and quality products."</p>
+            </div>
+            <!-- Add more review items as needed -->
+        </section>
+
+        <section id="add-review">
+            <h2>Leave a Review</h2>
+            <form action="submit_review.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gold Shopping. All rights reserved.</p>
+    </footer>
+</body>
+</html>
